@@ -412,7 +412,7 @@ contract Astrobirdz is ERC721, Ownable {
         emit UpgradeMaxMature(_tokenId, cost);
     }
 
-
+// this need to be fixed, withdrawReward function contains some bugs
     function withdrawReward(uint _tokenId) public returns(uint) {
         require(ownerOf(_tokenId) == msg.sender, "not Owner");
         require(level[_tokenId] > 1, "only mature and max mature bird can withdraw");
