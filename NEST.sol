@@ -511,7 +511,7 @@ contract Astrobirdz is ERC721, Ownable {
              } else if(_tokenIdToAttributes[tokenId].speice == 5) {
                  uri = "https://gateway.pinata.cloud/ipfs/QmVWCtAxaRVktazv4JddXMhMZYAUNRWrvZoDGQhmuy64Hp/Baby%20-%20Swan.mp4";
              }
-         } else if(level[tokenId] == 2) {
+         } else if(level[tokenId] == 2 || level[tokenId] == 3) {
               if(_tokenIdToAttributes[tokenId].speice == 0) {
                  uri = "https://gateway.pinata.cloud/ipfs/QmVWCtAxaRVktazv4JddXMhMZYAUNRWrvZoDGQhmuy64Hp/Adult%20-%20Golden%20Eagle.mp4";
              } else if(_tokenIdToAttributes[tokenId].speice == 1) {
