@@ -369,7 +369,7 @@ contract Astrobirdz is ERC721, Ownable {
         } else  if(rar == 2) {
             cost = rareMatureCost;
         } else  if(rar == 3) {
-            cost = legendaryMaxMatureCost;
+            cost = legendaryMatureCost;
         } 
         uint balance = token.balanceOf(msg.sender);
         require(balance >= cost, "low balance");
